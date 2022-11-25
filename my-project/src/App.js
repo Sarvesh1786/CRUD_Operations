@@ -1,12 +1,11 @@
+// import User_API from "./components/User_API";
 
-import User_API from "./components/User_API";
-
+import Emain from "./crud/Emain.js";
 function App() {
   return (
     <>
-     <User_API/>
+      <Emain />
     </>
   );
-}
-
+  }
 export default App;
