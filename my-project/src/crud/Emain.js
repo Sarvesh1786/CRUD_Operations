@@ -23,6 +23,7 @@ const Emain = () => {
       .catch((err) => console.log(err));
   };
   // id, name, email, phone
+  
   const onAdd = async () => {
     // console.log(id, name, email, phone);
     // setState((prevState) => [...prevState, { id, name, email, phone }]);
