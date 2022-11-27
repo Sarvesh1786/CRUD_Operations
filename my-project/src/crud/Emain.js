@@ -23,12 +23,10 @@ const Emain = () => {
       .catch((err) => console.log(err));
   };
   // id, name, email, phone
-  
   const onAdd = async () => {
     // console.log(id, name, email, phone);
     // setState((prevState) => [...prevState, { id, name, email, phone }]);
     setState((prevState) => [...prevState, editstate]);
-
   };
   const onDelete = async (id) => {
     console.log(id);
@@ -49,11 +47,10 @@ const Emain = () => {
     const update = [...state];
     const index = update.findIndex((user) => user.id === editstate.id);
     console.log(index);
-    update.splice(index, 1, editstate)
+    update.splice(index, 1, editstate);
     console.log(update);
     setState(update);
   };
-
 
   return (
     <>
